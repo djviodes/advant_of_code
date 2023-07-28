@@ -7,10 +7,10 @@ fn main() {
 }
 
 fn find_elf_with_max_calories() {
-    let mut current_elf = 1;
-    let mut current_elf_calories = 0;
-    let mut max_calories = 0;
-    let mut elf_with_max_calories = 1;
+    let mut current_elf: u16 = 1;
+    let mut current_elf_calories: u32 = 0;
+    let mut max_calories: u32 = 0;
+    let mut elf_with_max_calories: u16 = 1;
 
     for line in read_to_string("./input.txt").unwrap().lines() {
         if line == "" {
